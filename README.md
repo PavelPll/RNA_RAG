@@ -1,5 +1,5 @@
 # RNA_RAG
-Using Retrieval Augmented Generation (RAG) to decode and evolve RNA Molecules.
+Exploring the Use of Retrieval-Augmented Generation (RAG) in RNA Sequence Analysis
 
 ## Description 
 * Vanilla or/and BERT-like transformer implementation to generate RNA sequence embeddings
