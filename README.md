@@ -2,10 +2,12 @@
 Exploring the Use of Retrieval-Augmented Generation (RAG) in RNA Sequence Analysis
 
 ## Description 
-* Vanilla or/and BERT-like transformer implementation to generate RNA sequence embeddings
-    * Extraction RNA sequences from RNAcentral database
-* RNA embeddings arithmetic
-* Peptidyl Transferase Center (PTC): structure and evolution
+* RAG context construction
+    * From textbooks
+    * From images
+    * from RNA 3D structure
+    * from RNA diffusion model
+* Example: Using RAG to Decode and Evolve RNA Molecules
 * For more information click [here](https://github.com/PavelPll/RNA_transformer/blob/main/docs/RNA_transformer.pdf)
 
 
