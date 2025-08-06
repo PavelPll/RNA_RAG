@@ -1,7 +1,9 @@
-# RNA_transformer
-RNA Sequence Analysis Using Transformer Models
+# RNA_RAG
+Using Retrieval Augmented Generation (RAG) to decode and evolve RNA Molecules.
+
 ## Description 
-* Vanilla or/and BERT-like transformer implementation to generate RNA sequence embeddings 
+* Vanilla or/and BERT-like transformer implementation to generate RNA sequence embeddings
+    * Extraction RNA sequences from RNAcentral database
 * RNA embeddings arithmetic
 * Peptidyl Transferase Center (PTC): structure and evolution
 * For more information click [here](https://github.com/PavelPll/RNA_transformer/blob/main/docs/RNA_transformer.pdf)
