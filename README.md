@@ -89,9 +89,9 @@ pip install adjustText
 
 * #### Query the RNA of interest using a prompt
      ```
-     notebooks/RNA_deploymen.ipynb
+     notebooks/RNA_deployment.ipynb
      ```
-     **Only two kinds of prompts are possible: general and evolutionary.** This is configured using the prompt_choice parameter in configs/rna_rag.yaml. The general prompt (prompt_choice = 0) is used to ask a question about a given RNA, while the evolutionary prompt (prompt_choice = 1) is used to generate a new RNA sequence.
+     **Only two kinds of prompts are possible: general and evolutionary.** This is configured using the prompt_choice parameter in configs/rna_rag.yaml. The general prompt (prompt_choice = 0) is used to ask a question about a given RNA, while the evolutionary prompt (prompt_choice = 1) is used to generate a new RNA sequence. Both prompts can be visualized and modified, if needed, in lib/RAG_Biomistral/rag_templates.py. The corresponding context can be adjusted using other parameters in configs/rna_rag.yaml.
     * Two kinds of prompt are possible
          ```
          cd scripts && python rna_data_extract.py
