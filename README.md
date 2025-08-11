@@ -115,7 +115,8 @@ pip install adjustText
      ```
      notebooks/RNA_evolution.ipynb
      ```
-    * Define transformer parameters in config models/RNA_transformer/config.py
+    * Model input: fasta file with initial RNA sequence;
+    * Model output: new FASTA, PDB, and PNG files of the 3D structure for each RNA generated at every simulation step.
       
         * Construct a composite loss
             ```
