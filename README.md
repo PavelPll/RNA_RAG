@@ -8,7 +8,7 @@ Exploring the Use of Retrieval-Augmented Generation (RAG) in RNA Sequence Analys
     * from RNA 3D structure
     * from RNA diffusion model
 * Example: Using RAG to Decode and Evolve RNA Molecules
-* For more information click [here](https://github.com/PavelPll/RNA_transformer/blob/main/docs/RNA_transformer.pdf)
+* For more information click [here](https://github.com/PavelPll/RNA_RAG/blob/main/docs/rna_rag.pdf)
 
 
 
