@@ -27,7 +27,7 @@ Exploring the Use of Retrieval-Augmented Generation (RAG) in RNA Sequence Analys
 
 ### Installing
 
-I adapted the same conda environment, rna_rag, for both RAG and Ribodiffusion. DRfold2, however, I installed in a Docker container running Ubuntu 22.04, due to the ARENA package requiring Linux for compilation.
+I adapted the same conda environment, rna_rag, for both RAG and Ribodiffusion. DRfold2, however, I installed in a Docker container running Ubuntu 22.04, due to the ARENA package requiring Linux for compilation. * Install DRfold2:
 ```
 git clone https://github.com/PavelPll/RNA_RAG.git
 cd RNA_RAG
@@ -48,7 +48,7 @@ exit
 cd ..
 ```
 
-
+* install Ribodiffusion:
 ```
 git clone https://github.com/ml4bio/RiboDiffusion
 cd RiboDiffusion
