@@ -61,12 +61,26 @@ Download and put the checkpoint files in the RiboDiffusion/ckpts folder.
 ```
 Set up a conda environment:
 ```
-conda create -n rna python=3.10.16
-conda activate rna
-pip install -r requirements.txt
+conda create -n rna_rag2 python=3.11.11
+
+pip install -q torch==2.5.1 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install transformers matplotlib PyMuPDF sentence-transformers langchain langchain-community sentencepiece protobuf accelerate open-clip-torch optimum
+conda install -c conda-forge faiss-gpu
+pip uninstall numpy -y
+pip install numpy==1.26.2
+pip install bitsandbytes
+pip install --no-deps xformers
+pip install biopython==1.80
+conda install -c conda-forge pymol-open-source
+
+pip install torch_geometric==2.3.1 torch_scatter==2.1.1 torch_cluster==1.6.1
+pip install fair_esm==2.0.0 ml_collections==0.1.1
+conda install -c conda-forge dm-tree=0.1.7
+pip install rna-fm
+pip install matplotlib
+pip install adjustText
 ```
 * Install ViennaRNA from [here](https://www.tbi.univie.ac.at/RNA/ViennaRNA/doc/html/install.html)
-* Install StaVia from [here](https://pyvia.readthedocs.io/en/latest/Installation.html)
 
 ### Executing program
 
