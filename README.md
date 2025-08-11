@@ -91,7 +91,7 @@ pip install adjustText
      ```
      notebooks/RNA_deploymen.ipynb
      ```
-     Two kinds of prompts are possible: general and evolutionary. This is set up by parameter **prompt_choice** in configs/rna_rag.yaml.
+     **Only two kinds of prompts are possible: general and evolutionary.** This is configured using the prompt_choice parameter in configs/rna_rag.yaml. The general prompt (prompt_choice = 0) is used to ask a question about a given RNA, while the evolutionary prompt (prompt_choice = 1) is used to generate a new RNA sequence.
     * Two kinds of prompt are possible
          ```
          cd scripts && python rna_data_extract.py
