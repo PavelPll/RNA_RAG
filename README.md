@@ -52,7 +52,7 @@ Go back to RNA_RAG:
 cd ..
 ```
 
-* Install Ribodiffusion:
+* Install RiboDiffusion:
 ```
 git clone https://github.com/ml4bio/RiboDiffusion
 cd RiboDiffusion
