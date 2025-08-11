@@ -87,8 +87,11 @@ pip install adjustText
 
 ### Executing program
 
-* #### Extract/Generate RNA sequence data 
-    * Extraction RNA sequences from RNAcentral database
+* #### Query the RNA of interest using a prompt
+     ```
+     notebooks/RNA_deploymen.ipynb
+     ```
+    * Two kinds of prompt are possible
          ```
          cd scripts && python rna_data_extract.py
          ```
