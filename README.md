@@ -49,7 +49,7 @@ rm -rf model_hub.tar.gz
 cd Arena
 make Arena
 exit
-Go back to RNA_RAG:
+Go back to RNA_RAG folder:
 cd ..
 ```
 
