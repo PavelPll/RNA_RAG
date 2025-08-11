@@ -31,7 +31,7 @@ Exploring the Use of Retrieval-Augmented Generation (RAG) in RNA Sequence Analys
 
 ### Installing
 
-I adapted the same conda environment for both RAG and RiboDiffusion. DRfold2, however, I installed in a Docker container running Ubuntu 22.04, due to the ARENA package requiring Linux for compilation (see **RNA_RAG/Dockerfile**). 
+I adapted the same conda environment for both RAG and RiboDiffusion. However, I installed DRfold2 in a Docker container running Ubuntu 22.04 because the ARENA package requires Linux for compilation (see RNA_RAG/Dockerfile). The Large Language Model (LLM) is installed locally, so no specific keys are needed. I use an NVIDIA GeForce RTX 4060 with 8 GB VRAM and 32 GB of RAM.
 * Install DRfold2:
 ```
 git clone https://github.com/PavelPll/RNA_RAG.git
