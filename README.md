@@ -15,15 +15,17 @@ Exploring the Use of Retrieval-Augmented Generation (RAG) in RNA Sequence Analys
 ## Getting Started
 
 ### Dependencies
-* The starting point is [Vanilla Transformer implementation](https://github.com/hkproj/pytorch-transformer), used to translate phrases from English to Italian
+* Large Language Models (Biomistral, ...)
+* Text-visual transformers (clip-ViT-B-32, EVA02-E-14-plus, ...)
+* Ribodiffusion ([paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11211841/), [Github](https://github.com/ml4bio/RiboDiffusion))
 * [RNAcentral DATABASE](https://rnacentral.org) of non-coding RNA (ncRNA) sequences
 * [NIST Chemistry WebBook](https://webbook.nist.gov/chemistry/) to get some physicochemical properties
 * [RNA-FM](https://huggingface.co/multimolecule/rnafm): Interpretable RNA Foundation Model from Unannotated Data for Highly Accurate RNA Structure and Function Predictions
 * [ViennaRNA](https://www.tbi.univie.ac.at/RNA/ViennaRNA/doc/html) predicting and comparing RNA secondary structures
-* [StaVia (Via 2.0)](https://pyvia.readthedocs.io/en/latest/pyVia-home.html): single-cell trajectory inference method
 * [IUPAC code](https://www.bioinformatics.org/sms/iupac.html) for nucleotides and amino acids
 * Windows 11, Visual Studio Code
 * Torch
+* Docker
 
 ### Installing
 
@@ -59,7 +61,7 @@ Another checkpoint trained on the full dataset (with extra 0.1 Gaussian noise fo
 https://drive.google.com/file/d/1-IfWkLa5asu4SeeZAQ09oWm4KlpBMPmq/view
 Download and put the checkpoint files in the RiboDiffusion/ckpts folder.
 ```
-Set up a conda environment:
+* Set up a conda environment:
 ```
 conda create -n rna_rag2 python=3.11.11
 
