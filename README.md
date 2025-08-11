@@ -106,10 +106,10 @@ pip install adjustText
         book_tokens_per_page: 200 # tokens per page of textbook (pdf)
         chunk_overlap_ratio: 0.1  
         ```
-    * Generate random/symmetric RNA sequences:
+    * Adjust LLM performance quality and processing speed by selecting the degree of quantization used during inference and the model type:
         ```
-        cd scripts && python rna_data_extract_random.py
-        cd scripts && python rna_data_extract_symmetric.
+        inference_8_bit: True # False for 4 bit; True for 8 bit
+        llm_model_choice: 0 # 0 for Biomistral (better); 1 for medalpaca-7b
         ```
     * Generate RNA hairpins:
         ```
