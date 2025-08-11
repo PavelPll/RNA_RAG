@@ -89,7 +89,7 @@ pip install adjustText
 
 * #### Query the RNA of interest using a prompt
      ```
-     notebooks/RNA_deployment.ipynb
+     notebooks/RAG_deployment.ipynb
      ```
      **Only two kinds of prompts are possible: general and evolutionary.** This is configured using the prompt_choice parameter in configs/rna_rag.yaml. The general prompt (prompt_choice = 0) is used to ask a question about a given RNA, while the evolutionary prompt (prompt_choice = 1) is used to generate a new RNA sequence. Both prompts can be visualized and modified, if needed, in lib/RAG_Biomistral/rag_templates.py. The corresponding context can be adjusted using other parameters in configs/rna_rag.yaml:
     * Choose a model to generate text and image embeddings using text_visual_encoder_choice:
@@ -111,7 +111,10 @@ pip install adjustText
         inference_8_bit: True # False for 4 bit; True for 8 bit
         llm_model_choice: 0 # 0 for Biomistral (better); 1 for medalpaca-7b
         ```
-* #### Run RNA_transformer
+* #### An attempt to model RNA evolution using a large language model (LLM)
+     ```
+     notebooks/RNA_evolution.ipynb
+     ```
     * Define transformer parameters in config models/RNA_transformer/config.py
       
         * Construct a composite loss
