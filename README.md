@@ -99,7 +99,7 @@ pip install adjustText
          # 4 for EVA02-E-14-plus (on cpu because of long embedding) OK                      
          # 5 for hf-hub:imageomics/bioclip (on cpu because of long embedding) OK
          ```
-    * Text and image context configuration for prompt construction.:
+    * Change text and image context configuration for prompt construction.:
         ```
         num_question_context_pages: 3 # context size in prompt
         num_image_context_pages: 3 # context size in prompt per image
