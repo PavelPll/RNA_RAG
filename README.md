@@ -94,10 +94,10 @@ pip install adjustText
      **Only two kinds of prompts are possible: general and evolutionary.** This is configured using the prompt_choice parameter in configs/rna_rag.yaml. The general prompt (prompt_choice = 0) is used to ask a question about a given RNA, while the evolutionary prompt (prompt_choice = 1) is used to generate a new RNA sequence. Both prompts can be visualized and modified, if needed, in lib/RAG_Biomistral/rag_templates.py. The corresponding context can be adjusted using other parameters in configs/rna_rag.yaml:
     * Choose a model to generate text and image embeddings using text_visual_encoder_choice:
          ```
-         # 2 for sentence-transformers/clip-ViT-B-32 (on gpu) the best!
-         # 3 for ViT-H-14 (on cpu because of long embedding) OK                  
-         # 4 for EVA02-E-14-plus (on cpu because of long embedding) OK                      
-         # 5 for hf-hub:imageomics/bioclip (on cpu because of long embedding) OK
+         2 for sentence-transformers/clip-ViT-B-32 (on gpu) the best!
+         3 for ViT-H-14 (on cpu because of long embedding) OK                  
+         4 for EVA02-E-14-plus (on cpu because of long embedding) OK                      
+         5 for hf-hub:imageomics/bioclip (on cpu because of long embedding) OK
          ```
     * Change text and image context configuration for prompt construction.:
         ```
@@ -110,11 +110,6 @@ pip install adjustText
         ```
         inference_8_bit: True # False for 4 bit; True for 8 bit
         llm_model_choice: 0 # 0 for Biomistral (better); 1 for medalpaca-7b
-        ```
-    * Generate RNA hairpins:
-        ```
-        cd scripts && python rna_data_extract_hairpin.py
-        cd scripts && python rna_data_extract_hairpin_tail.py
         ```
 * #### Run RNA_transformer
     * Define transformer parameters in config models/RNA_transformer/config.py
