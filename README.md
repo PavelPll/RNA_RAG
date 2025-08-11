@@ -37,6 +37,7 @@ cd drfold2
 mkdir file_exchange\fasta_input && mkdir file_exchange\pdb_output
 docker build -t drfold_image ../
 docker run --gpus all -it --name drfold_container -v .:/opt/drfold2 drfold_image bash
+The run inside container:
 wget --header="User-Agent: Mozilla/5.0" https://zhanglab.comp.nus.edu.sg/DRfold2/res/model_hub.tar.gz
 tar -xzvf model_hub.tar.gz
 rm -rf model_hub.tar.gz
@@ -49,8 +50,13 @@ cd ..
 
 
 ```
-git clone https://github.com/PavelPll/RNA_RAG.git
-cd RNA_RAG
+git clone https://github.com/ml4bio/RiboDiffusion
+cd RiboDiffusion
+Model checkpoint can be downloaded from here. 
+https://drive.google.com/drive/folders/10BNyCNjxGDJ4rEze9yPGPDXa73iu1skx
+Another checkpoint trained on the full dataset (with extra 0.1 Gaussian noise for coordinates) can be downloaded from here.
+https://drive.google.com/file/d/1-IfWkLa5asu4SeeZAQ09oWm4KlpBMPmq/view
+Download and put the checkpoint files in the RiboDiffusion/ckpts folder.
 ```
 ```
 conda create -n rna python=3.10.16
