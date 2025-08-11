@@ -85,6 +85,7 @@ pip install matplotlib
 pip install adjustText
 ```
 * Install ViennaRNA from [here](https://www.tbi.univie.ac.at/RNA/ViennaRNA/doc/html/install.html)
+* Add RNA textbooks in PDF format to data/raw/books.
 
 ### Executing program
 
