@@ -49,7 +49,7 @@ exit
 cd ..
 ```
 
-* install Ribodiffusion:
+* Install Ribodiffusion:
 ```
 git clone https://github.com/ml4bio/RiboDiffusion
 cd RiboDiffusion
@@ -59,6 +59,7 @@ Another checkpoint trained on the full dataset (with extra 0.1 Gaussian noise fo
 https://drive.google.com/file/d/1-IfWkLa5asu4SeeZAQ09oWm4KlpBMPmq/view
 Download and put the checkpoint files in the RiboDiffusion/ckpts folder.
 ```
+Set up a conda environment:
 ```
 conda create -n rna python=3.10.16
 conda activate rna
