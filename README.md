@@ -28,17 +28,37 @@ Exploring the Use of Retrieval-Augmented Generation (RAG) in RNA Sequence Analys
 ### Installing
 
 I adapted the same Conda environment for RAG and Ribodiffusion. DRfold2, however, was installed in a Docker container running Ubuntu 22.04, due to the ARENA package requiring Linux for compilation.
-* Install ViennaRNA from [here](https://www.tbi.univie.ac.at/RNA/ViennaRNA/doc/html/install.html)
-* Install StaVia from [here](https://pyvia.readthedocs.io/en/latest/Installation.html)
 ```
-git clone https://github.com/PavelPll/RNA_transformer.git
-cd RNA_transformer
+git clone https://github.com/PavelPll/RNA_RAG.git
+cd RNA_RAG
+git clone https://github.com/leeyang/DRfold2.git drfold2
+git clone https://github.com/pylelab/Arena.git drfold2/Arena
+cd drfold2
+mkdir file_exchange\fasta_input && mkdir file_exchange\pdb_output
+docker build -t drfold_image ../
+docker run --gpus all -it --name drfold_container -v .:/opt/drfold2 drfold_image bash
+wget --header="User-Agent: Mozilla/5.0" https://zhanglab.comp.nus.edu.sg/DRfold2/res/model_hub.tar.gz
+tar -xzvf model_hub.tar.gz
+rm -rf model_hub.tar.gz
+cd Arena
+make Arena
+# clang++ -O3 Arena.cpp -o Arena
+exit
+cd ..
+```
+
+
+```
+git clone https://github.com/PavelPll/RNA_RAG.git
+cd RNA_RAG
 ```
 ```
 conda create -n rna python=3.10.16
 conda activate rna
 pip install -r requirements.txt
 ```
+* Install ViennaRNA from [here](https://www.tbi.univie.ac.at/RNA/ViennaRNA/doc/html/install.html)
+* Install StaVia from [here](https://pyvia.readthedocs.io/en/latest/Installation.html)
 
 ### Executing program
 
