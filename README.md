@@ -44,8 +44,8 @@ tar -xzvf model_hub.tar.gz
 rm -rf model_hub.tar.gz
 cd Arena
 make Arena
-# clang++ -O3 Arena.cpp -o Arena
 exit
+Go back to RNA_RAG:
 cd ..
 ```
 
