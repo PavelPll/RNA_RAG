@@ -17,7 +17,8 @@ Exploring the Use of Retrieval-Augmented Generation (RAG) in RNA Sequence Analys
 ### Dependencies
 * Large Language Models (Biomistral, ...)
 * Text-visual transformers (clip-ViT-B-32, EVA02-E-14-plus, ...)
-* Ribodiffusion ([paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11211841/), [Github](https://github.com/ml4bio/RiboDiffusion))
+* RiboDiffusion ([paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11211841/), [Github](https://github.com/ml4bio/RiboDiffusion))
+* DRfold2 ([GitHub](https://github.com/leeyang/DRfold2.git)https://github.com/leeyang/DRfold2.git
 * [RNAcentral DATABASE](https://rnacentral.org) of non-coding RNA (ncRNA) sequences
 * [NIST Chemistry WebBook](https://webbook.nist.gov/chemistry/) to get some physicochemical properties
 * [RNA-FM](https://huggingface.co/multimolecule/rnafm): Interpretable RNA Foundation Model from Unannotated Data for Highly Accurate RNA Structure and Function Predictions
