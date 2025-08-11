@@ -27,6 +27,7 @@ Exploring the Use of Retrieval-Augmented Generation (RAG) in RNA Sequence Analys
 
 ### Installing
 
+I adapted the same Conda environment for RAG and Ribodiffusion, while I installed DRfold2 in a Docker container running Ubuntu 22.04 due to the ARENA package requiring compilation on Linux.
 * Install ViennaRNA from [here](https://www.tbi.univie.ac.at/RNA/ViennaRNA/doc/html/install.html)
 * Install StaVia from [here](https://pyvia.readthedocs.io/en/latest/Installation.html)
 ```
