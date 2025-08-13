@@ -36,7 +36,7 @@ I adapted the same conda environment for both RAG and RiboDiffusion. However, I 
 ```
 git clone https://github.com/PavelPll/RNA_RAG.git
 cd RNA_RAG
-'''
+```
 * Install DRfold2:
 ```
 git clone https://github.com/PavelPll/RNA_RAG.git
