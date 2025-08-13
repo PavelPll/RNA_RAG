@@ -39,7 +39,6 @@ cd RNA_RAG
 ```
 * Install DRfold2:
 ```
-git clone https://github.com/PavelPll/RNA_RAG.git
 cd RNA_RAG
 git clone https://github.com/leeyang/DRfold2.git drfold2
 git clone https://github.com/pylelab/Arena.git drfold2/Arena
@@ -60,6 +59,7 @@ cd ..
 
 * Install RiboDiffusion:
 ```
+cd RNA_RAG
 git clone https://github.com/ml4bio/RiboDiffusion
 cd RiboDiffusion
 Model checkpoint can be downloaded from here. 
