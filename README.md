@@ -140,26 +140,11 @@ pip install adjustText
         ```
         cd notebooks && RNA_transformer.ipynb
         ```
-* #### Analysis
-    * Calculate and plot RNA secondary structure:
-        ```
-        cd notebooks && RNA_plot.ipynb
-        ```
-    * Check embeddings arithmetic and the effect of basis:
-        ```
-        cd notebooks && embed_arithmetic_kdtree.ipynb
-        cd notebooks && embed_arithmetic_basis.ipynb
-        ```
-    * Run Single-Cell Inspired Analysis of RNA
-        ```
-        cd notebooks && VIA_analysis.ipynb
-        ```
-
 ## License
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 
 
 > [!NOTE]
-> For more information see short [presentation](https://github.com/PavelPll/RNA_transformer/blob/main/docs/RNA_transformer.pdf)
+> For more information see short [presentation](https://github.com/PavelPll/RNA_RAG/blob/main/docs/rna_rag.pdf)
 
