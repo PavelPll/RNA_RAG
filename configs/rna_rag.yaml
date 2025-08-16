@@ -1,0 +1,27 @@
+model_for_embeddings:
+  # CHOOSE a model to generate text and image embeddings
+  # 0 for google/siglip2-base-patch32-256 (max phrase length only 64 tokens, too short for RAG) not OK
+  # 1 for CLIP-ViT-B-32-laion2B-s34B-b79K (max phrase length only 77 tokens, too short for RAG) not OK
+  # 2 for sentence-transformers/clip-ViT-B-32 (on gpu) the best
+  # 3 for ViT-H-14 (on cpu because of long embedding) OK                  
+  # 4 for EVA02-E-14-plus (on cpu because of long embedding) OK                      
+  # 5 for hf-hub:imageomics/bioclip (on cpu because of long embedding) OK
+  text_visual_encoder_choice: 2
+
+ribodiffusion:
+  n_samples: 10 # Number of backfolded RNA sequences generated per run
+
+llm_model:
+  inference_8_bit: True # False for 4 bit; True for 8 bit
+  llm_model_choice: 0 # 0 for Biomistral (recommended); 1 for medalpaca-7b (maximum sequence length is 512, too short for prompt 0)
+  # 0 for general prompt with parameters
+  # 1 for RNAevolution prompt to generate new RNA sequence (by default)
+  # for prompt details see lib/RAG_Biomistral/rag_templates.py
+  # 2 for custom DEBUG prompt, can be edited inside lib.RAG_Biomostral.Rag_Biomistral.generate_response()
+  prompt_choice: 1 
+
+rag:
+  num_question_context_pages: 3 # context size in prompt
+  num_image_context_pages: 3 # context size in prompt per image
+  book_tokens_per_page: 200 # tokens per page of textbook (pdf)
+  chunk_overlap_ratio: 0.1  
