@@ -121,7 +121,7 @@ pip install adjustText
      ```
      notebooks/RNA_evolution.ipynb
      ```
-    * Model input: fasta file with initial RNA sequence;
+    * Model input: FASTA file with initial RNA sequence;
     * Model output: new FASTA, PDB, and PNG files of the 3D structure for each RNA generated at every simulation step.
 ## License
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
