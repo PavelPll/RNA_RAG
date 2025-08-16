@@ -2,9 +2,9 @@
 Exploring the Use of Retrieval-Augmented Generation (RAG) in RNA Sequence Analysis
 
 ## Description 
-* RAG context construction
-    * From textbooks
-    * From images
+* RAG context construction:
+    * from textbooks
+    * from images
     * from RNA 3D structure
     * from RNA diffusion model
 * Example: Using RAG to Decode and Evolve RNA Molecules
