@@ -81,7 +81,6 @@ pip install bitsandbytes
 pip install --no-deps xformers
 pip install biopython==1.80
 conda install -c conda-forge pymol-open-source
-
 pip install torch_geometric==2.3.1 torch_scatter==2.1.1 torch_cluster==1.6.1
 pip install fair_esm==2.0.0 ml_collections==0.1.1
 conda install -c conda-forge dm-tree=0.1.7
@@ -116,7 +115,7 @@ pip install adjustText
     * Adjust LLM performance quality and processing speed by selecting the degree of quantization used during inference and the model type:
         ```
         inference_8_bit: True # False for 4 bit; True for 8 bit
-        llm_model_choice: 0 # 0 for Biomistral (better); 1 for medalpaca-7b
+        llm_model_choice: 0 # 0 for Biomistral (recommended); 1 for medalpaca-7b (context is shorter)
         ```
 * #### An attempt to model RNA evolution using a large language model (LLM)
      ```
