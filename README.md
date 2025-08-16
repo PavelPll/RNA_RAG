@@ -123,22 +123,6 @@ pip install adjustText
      ```
     * Model input: fasta file with initial RNA sequence;
     * Model output: new FASTA, PDB, and PNG files of the 3D structure for each RNA generated at every simulation step.
-      
-        * Construct a composite loss
-            ```
-            "autoencoder_bert": False,
-            "autoencoder_vanilla": True,
-            "classification": True,
-            ```
-        *  Set whether to use or not:
-            * learnable loss weighting for the classification task
-            * custom embeddings  
-            * a mask token for training
-        * etc
-    * Run training and inference
-        ```
-        cd notebooks && RNA_transformer.ipynb
-        ```
 ## License
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
